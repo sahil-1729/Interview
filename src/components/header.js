@@ -4,7 +4,7 @@ import { Settings } from 'lucide-react';
 import { UserPen } from 'lucide-react';
 
 const Header = () => {
-    return (<header className=" bg-gradient-to-r from-[#61bcff] to-[#23e7ff] flex justify-between text-white">
+    return (<header className="basis-full bg-gradient-to-r from-[#61bcff] to-[#23e7ff] flex justify-between text-white">
         <div className="flex gap-4 p-4">
             <button className='flex flex-row gap-2 items-center'>
                 <ChartBar size={16} />

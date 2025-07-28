@@ -8,11 +8,12 @@ import LineChart from './LineChart';
 export default function Graphs() {
 
     return (
-        <div className='w-11/12 px-4 gap-8 flex flex-col py-4'>
+        <div className='lg:w-11/12 px-4 gap-8 flex flex-col py-4 '>
+            
             {/* border-red border-solid border-2 */}
             {/* Headline */}
-            <div className='flex flex-row justify-between '>
-                <div className='flex flex-row gap-8  items-center'>
+            <div className=' flex flex-row sm:justify-between sm:flex-nowrap flex-wrap justify-center'>
+                <div className='flex flex-row gap-8  items-center lg:text-nowrap text-wrap'>
 
                     <div className='bg-white shadow-xl'>
                         <CarFront color='#ec4899' strokeWidth={1} size={96} />
@@ -28,7 +29,7 @@ export default function Graphs() {
                     </div>
 
                 </div>
-                <div className='flex flex-row gap-4'>
+                <div className='flex flex-row gap-4 '>
                     <div className='flex items-center'>
                         <button className='bg-black p-2 rounded'>
                             <Star color='white' fill='white' size={16} />
@@ -44,9 +45,9 @@ export default function Graphs() {
             </div>
 
             {/* 3 boxes  */}
-            <div className='flex flex-row justify-evenly text-white gap-8 pt-4 pb-2'>
+            <div className='flex  justify-evenly text-white gap-8 pt-4 pb-2 xl:flex-nowrap lg:flex-row lg:flex-wrap flex-nowrap flex-col'>
                 <div className='bg-gradient-to-r from-[#564f82] to-[#2d587c]
-                p-4 rounded flex flex-row justify-between place-items-center w-4/12'>
+                p-4 rounded flex flex-row justify-between place-items-center xl:w-4/12 w-full gap-8'>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold'>
                             Total Orders
@@ -60,7 +61,7 @@ export default function Graphs() {
                     </span>
                 </div>
 
-                <div className='bg-gradient-to-r from-[#3bb6ee] via-[#19d7e5] to-[#46b4f2] p-4 rounded flex flex-row justify-between place-items-center w-4/12'>
+                <div className='w-full bg-gradient-to-r from-[#3bb6ee] via-[#19d7e5] to-[#46b4f2] p-4 rounded flex flex-row justify-between place-items-center xl:w-4/12 gap-8'>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold'>
                             Clients
@@ -74,7 +75,7 @@ export default function Graphs() {
                     </span>
                 </div>
 
-                <div className='bg-gradient-to-r from-[#2cbd84] to-[#19a96a] p-4 rounded flex flex-row justify-between place-items-center w-4/12'>
+                <div className='w-full bg-gradient-to-r from-[#2cbd84] to-[#19a96a] p-4 rounded flex flex-row justify-between place-items-center xl:w-4/12 gap-8'>
                     <div className='flex flex-col'>
                         <h1 className='font-semibold'>
                             Followers
@@ -91,8 +92,8 @@ export default function Graphs() {
             </div>
 
             {/* graphs */}
-            <div className='flex flex-row gap-4 justify-between'>
-                <div className='w-6/12 bg-white px-4 pt-4 rounded-sm'>
+            <div className='flex flex-row gap-4 justify-center xl:flex-nowrap flex-wrap '>
+                <div className='xl:w-6/12 w-11/12 bg-white px-4 pt-4 rounded-sm'>
                     <h1 className='font-semibold text-xl'>
                         SALES REPORT
                     </h1>
@@ -190,7 +191,7 @@ export default function Graphs() {
                     </div>
 
                 </div>
-                <div className='w-6/12 bg-white px-4 pt-4 rounded-sm max-h-min'>
+                <div className='xl:w-6/12 w-11/12 bg-white px-4 pt-4 rounded-sm max-h-min'>
                     <h1 className='font-semibold text-xl'>
                         BANDWIDTH REPORTS
                     </h1>
@@ -264,7 +265,7 @@ export default function Graphs() {
             </div>
 
             {/* result boxes  */}
-            <div className='flex flex-row justify-evenly gap-8 pt-4 pb-2'>
+            {/* <div className='flex flex-row justify-evenly gap-8 pt-4 pb-2'>
                 <div className='bg-white shadow
                 p-4 rounded flex flex-row justify-between place-items-center w-4/12'>
                     <div className='flex flex-col'>
@@ -308,6 +309,6 @@ export default function Graphs() {
                     </span>
                 </div>
 
-            </div>
+            </div> */}
         </div>)
 }

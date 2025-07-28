@@ -2,13 +2,13 @@ import React from "react"
 import { Boxes, ChartArea, CirclePlus, Cog, Component, LayoutDashboard, LayoutPanelLeft, Puzzle, Table, TicketCheck } from 'lucide-react';
 
 export default function Dashboard() {
-    return <aside className='bg-white flex flex-col gap-4 w-max text-nowrap p-4 h-screen rounded-sm text-sm'>
+    return <aside className='hidden md:visible bg-white md:flex flex-col gap-4 w-max text-nowrap p-4 h-screen rounded-sm text-sm'>
         <div className='font-semibold flex flex-col gap-2'>
             <h1 className='text-[#003673]'>
                 DASHBOARDS
             </h1>
             <div className='px-4 flex flex-row items-center gap-4'>
-                <LayoutPanelLeft color="#9ca3af" strokeWidth={1.5} size={32} />
+                <LayoutPanelLeft color="#9ca3af" strokeWidth={1.5} size={24} />
                 <p  >Dashboard Example 1</p>
             </div>
         </div>
@@ -21,17 +21,17 @@ export default function Dashboard() {
             <div className='px-4 flex flex-col gap-4'>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <Component size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <Component size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >Elements </p>
                 </button>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <Puzzle size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <Puzzle size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >Components</p>
                 </button>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <Table size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <Table size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >Tables</p>
                 </button>
 
@@ -45,7 +45,7 @@ export default function Dashboard() {
             </h1>
             <div className='px-4 flex flex-col gap-4'>
                 <button className='flex flex-row items-center gap-4'>
-                    <Boxes size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <Boxes size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >Dashboard Boxes</p>
                 </button>
             </div>
@@ -59,17 +59,17 @@ export default function Dashboard() {
             <div className='px-4 flex flex-col gap-4'>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <Cog size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <Cog size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p>Forms Controls </p>
                 </button>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <LayoutDashboard color="#9ca3af" strokeWidth={1.5} size={32} />
+                    <LayoutDashboard color="#9ca3af" strokeWidth={1.5} size={24} />
                     <p>Form Layouts</p>
                 </button>
 
                 <button className='flex flex-row items-center gap-4'>
-                    <TicketCheck size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <TicketCheck size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p>Forms Validation</p>
                 </button>
 
@@ -83,7 +83,7 @@ export default function Dashboard() {
             </h1>
             <div className='px-4 flex flex-col gap-4'>
                 <button className='flex flex-row items-center gap-4'>
-                    <ChartArea size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <ChartArea size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >ChartJS</p>
                 </button>
             </div>
@@ -96,7 +96,7 @@ export default function Dashboard() {
             </h1>
             <div className='px-4 flex flex-col gap-4'>
                 <button className='flex flex-row items-center gap-4'>
-                    <CirclePlus size={32} color="#9ca3af" strokeWidth={1.5} />
+                    <CirclePlus size={24} color="#9ca3af" strokeWidth={1.5} />
                     <p  >Upgrade to PRO</p>
                 </button>
             </div>
